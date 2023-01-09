@@ -29,7 +29,7 @@
           >
 
           <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Studio</a></li>
+            <li class="item"><a href="./index.html" class="link menu-link">Studio</a></li>
 
             <li class="item">
               <a href="./portfolio.html" class="link">Portfolio</a>
@@ -59,7 +59,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button button-primary">
+          <button data-modal-open type="button" class="button button-primary">
             Order Service
           </button>
         </div>
@@ -390,5 +390,17 @@
         </div>
       </div>
     </footer>
+
+    <div data-modal class="backdrop is-hidden ">
+      <div class="modal">
+        <button data-modal-close type="button" class="backdrop-button">
+          <svg class="vector" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
