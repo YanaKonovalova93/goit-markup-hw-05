@@ -118,6 +118,8 @@ header {
   padding-top: 24px;
   padding-bottom: 24px;
   color: var(--dark);
+
+  transition: color 250ms var(--timing-function);
 }
 
 .site-nav .link:hover,
@@ -142,6 +144,8 @@ header {
   color: var(--dark);
   padding-top: 24px;
   padding-bottom: 24px;
+
+  transition: color 250ms var(--timing-function);
 }
 
 .site-adress .link:hover,
@@ -165,7 +169,8 @@ header {
   content: "";
 
   position: absolute;
-  margin-top: 20px;
+  bottom: 0;
+  left: 0;
 
   display: block;
   width: 100%;
@@ -225,6 +230,10 @@ header {
   padding: 16px 32px;
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button-primary:hover {
@@ -355,6 +364,8 @@ header {
   height: 40px;
   background-color: var(--primary-brand);
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .social-link:hover,
@@ -394,6 +405,9 @@ header {
   height: 88px;
   padding: 16px 32px;
   color: var(--subtle-text);
+
+  transition: border-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 
 .customers-link:hover,
@@ -454,6 +468,8 @@ header {
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
 }
 
 .footer-icon:hover,
@@ -499,6 +515,10 @@ header {
   border-radius: 4px;
   padding: 12px 24px;
   border: 1px solid var(--accent);
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function),
+    border-color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .button-secondary:hover,
@@ -529,6 +549,8 @@ header {
   display: block;
   color: var(--dark);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  transition: box-shadow 250ms var(--timing-function);
 }
 
 .examples-title:hover,
@@ -607,12 +629,14 @@ header {
 
   opacity: 1;
 
-  transition: opacity 250ms var(--timing-function);
+  transition: opacity 250ms var(--timing-function),
+    visibility 250ms var(--timing-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -623,7 +647,6 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: ;
 
   min-height: 576px;
   min-width: 408px;
@@ -651,6 +674,9 @@ header {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function);
 }
 
 .vector {
